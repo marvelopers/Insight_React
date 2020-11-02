@@ -6,9 +6,9 @@ const REMOVE = 'friend/REMOVE';
 const EDIT = 'friend/EDIT';
 
 //액션 생성자 함수 정의
-export const addFriend = friend => ({type:ADD,friendfriend});
-export const removeFriend = friend => ({type:REMOVE,friendfriend});
-export const editFriend = friend => ({type:EDIT,friendfriend});
+export const addFriend = friend => ({type:ADD,friend});
+export const removeFriend = friend => ({type:REMOVE,friend});
+export const editFriend = friend => ({type:EDIT,friend});
 
 
 const INITIAL_STATE = {friends:[]};
@@ -34,3 +34,4 @@ export default reducer;
 // - 연관된 액션 타입, 액션 생성자 함수, 리듀서 파일을 하나의 파일로 작성한다.
 // - 리듀서 함수는 export default 키워드로 내보낸다.
 // - 액션 생성자 함수는 export 키워드로 내보낸다.
+// - 액션 타입은 접두사와 액션 이름을 조합해서 만든다.
