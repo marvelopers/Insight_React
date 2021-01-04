@@ -6,6 +6,7 @@ function FriendList ({friends}){
       {friends.map(friend => (
         <li key={friend.id}>{friend.name}</li>
       ))}
+      
     </li>
   );
 }
