@@ -25,3 +25,5 @@ export function removeTodo({ id }) {
 export function removeAllTodo() {
   return { type: REMOVE_ALL };
 }
+
+npx create - next - app fitpet - go--use - npm--example "https://github.com/vercel/next-learn-starter/tree/master/learn-starter"
