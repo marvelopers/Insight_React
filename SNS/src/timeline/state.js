@@ -10,7 +10,7 @@ const INCREASE_NEXT_PAGE = timeline/INCREASE_NEXT_PAGE;
 export const addTimeline = timeline => ({type:ADD,timeline});
 export const removeTimeline = timeline => ({type:REMOVE,timeline});
 export const editTimeline = timeline => ({type:EDIT,timeline});
-export const increaseNextPage = () => ({type:INCREASE_NEXT_PAGE});
+export const increaseNextPage = () => ({type:INCREASE_NEXT_PAGE}); //인피니티스크롤을 위해 타임라인의 끝에 도달했을 때 서버에게 요청할 페이지 번호를 관리하는 액션 타입
 
 
 const INITIAL_STATE = {timelines:[], nextPage:0};
