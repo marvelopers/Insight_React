@@ -1,0 +1,13 @@
+{
+  "presets": [
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-template-literals",
+      {
+        "loose": true //문자열 연결 시 concat 대신 + 연산자를 사용한다.
+      }
+    ]
+  ]
+}
