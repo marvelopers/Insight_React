@@ -109,21 +109,9 @@ hashedImages/
 # Mypy cache
 .mypy_cache
 
-# Local certs
-*.pem
-docs/local/cert/
-
 .tmp
 
 .idea
 
-*.pyc
-src/celerybeat-schedule.db
-
-.python-version
-
 .vscode
 
-# ignore statics from all sites
-src/sites/fitpet_admin/static/
-src/sites/fitpetmall_backend/static/
