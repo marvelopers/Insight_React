@@ -31,3 +31,39 @@ npx babel src --out-dir dist
 ```
 yarn add webpack webpack-cli babel-loader
 ```
+
+* 바벨은 컴파일 시 파싱, 변환, 생성 3가지 단계를 거친다.
+
+### 전체 설정 파일과 지역 설정 파일
+
+1. 전체 설정 파일 : babel.config.js
+2. 지역 설정 파일 : .babelrc, .babelrx.js 
+
+
+## 바벨과 폴리필
+
+1. core-js 
+```
+import 'core-js'
+```
+
+2. core-js에서 필요한 폴리필만 가져오기
+```
+import 'core-js/faeture/promise'; 
+import 'core-js/faeture/object/values'; 
+```
+
+3. @babel/preset-env 프리셋 이용하기
+babel.config.js
+```
+const presets = [
+  [
+    '@babel/perset-env',
+    {
+      targets: '>0.25%', 'not dead',
+    },
+  ],
+]
+
+module.exports = { presets };
+```
