@@ -1,6 +1,6 @@
 import React from 'react'
 
-type BasicStateAction<S> = (S => S) | S;
+type BasicStateAction<S> = ( S => S) | S;
 type MaybeCallback<S> = void | null | (S => mixed);
 type Dispatch<S, A> = (A, MaybeCallback<S>) => void;
 
@@ -20,11 +20,11 @@ type Hook = {
   next: Hook | null,
 };
 
-const useState<S> = (initialState:(()=> S) | S) : [S, Dispatch<S, BasicStateAction<S>>]) =>  {
+const useState = <S>(initialState:(()=> S) | S) : [S, Dispatch<S, BasicStateAction<S>>]) =>  {
   return useReducer(basicStateReducer, (initialState: any))
 }
 
-const useReducer<S, A> = (reducer: (S, A) => S, initialState: S,initialAction: A | void | null) => {
+const useReducer = <S, A>(reducer: (S, A) => S, initialState: S,initialAction: A | void | null) => {
   currentlyRenderingComponent = resolveCurrentlyRenderingComponent();
   workInProgressHook = createWorkInProgressHook();
 
