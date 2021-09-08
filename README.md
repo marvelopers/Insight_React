@@ -1,4 +1,4 @@
-실전 리액트 프로그래밍 저자: 이재승
+# React Hook API 요리조리 살펴보고 깊게보기
 
-1. CRA
-2. 
+Hook은 react v16.8에 추가되었습니다.
+props, state, context, refs, lifecycle 등의 API를 제공해 직관적으로 react를 사용할 수 있습니다.
